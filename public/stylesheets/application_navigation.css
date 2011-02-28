@@ -1,0 +1,31 @@
+nav{
+  display:block;
+}
+ul.navigation.application{
+  padding: 0;
+  margin: 0;
+}
+
+ul.navigation.application li{
+}
+
+ul.navigation.application li a{
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+ul.navigation.application li a:hover{
+  text-decoration: underline;
+}
+
+ul.navigation.application.level_1 a.active{
+  color: #FAA;
+}
+
+ul.navigation.application ul.level_2{
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+}
+

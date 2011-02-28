@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) : "Menumatic Test App | #{request.fullpath}" %></title>
+    <%= stylesheet_link_tag "application", "application_navigation" %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <div id="container">
+    <header>
+      <h1>Menumatic Test Application</h1>
+      <h2><%= request.fullpath %></h2>
+      <nav>
+        <%= navigation :application %>
+        <div class="clear"></div>
+      </nav>
+    </header>
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <% end %>
+      <%= content_tag :h1, yield(:title) if show_title? %>
+      <%= yield %>
+    </div>
+  </body>
+</html>
