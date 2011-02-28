@@ -22,6 +22,10 @@
       <% end %>
       <%= content_tag :h1, yield(:title) if show_title? %>
       <%= yield %>
+
+      <div class="sidebar">
+        <%#= navigation :application, :sidebar %>
+      </div>
     </div>
   </body>
 </html>
