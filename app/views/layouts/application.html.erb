@@ -17,15 +17,20 @@
         <div class="clear"></div>
       </nav>
     </header>
+      <aside>
+        <%#= navigation :application, :sidebar %>
+        <h2>Secondary nav</h2>
+        <%= navigation :application, :levels => [:secondary] %>
+
+        <h2>Tertiary nav</h2>
+        <%= navigation :application, :levels => [:tertiary] %>
+      </aside>
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
       <%= content_tag :h1, yield(:title) if show_title? %>
       <%= yield %>
-
-      <div class="sidebar">
-        <%#= navigation :application, :sidebar %>
-      </div>
+      <div class="clear"></div>
     </div>
   </body>
 </html>

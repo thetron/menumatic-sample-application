@@ -73,3 +73,9 @@ a {
 .error_messages ul {
   margin: 0;
 }
+
+aside{
+  float:right;
+  width: 250px;
+  margin-left: 20px;
+}

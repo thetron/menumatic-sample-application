@@ -9,6 +9,12 @@ MenumaticTest::Application.routes.draw do
   match 'store' => 'home#index'
   match 'store/on_special' => 'home#index'
   match 'store/coming_soon' => 'home#index'
+  match 'store/categories' => 'home#index'
+  match 'store/categories/shirts' => 'home#index'
+  match 'store/categories/pants' => 'home#index'
+  match 'store/categories/hats' => 'home#index'
+  match 'store/categories/accessories' => 'home#index'
+  match 'store/categories/sporks' => 'home#index'
   root :to => "home#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.

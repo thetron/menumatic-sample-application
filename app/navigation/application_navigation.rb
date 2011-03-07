@@ -13,9 +13,16 @@ class ApplicationNavigation < Menumatic::Navigation::Base
       sidebar.navigate_to "Edit 'About'", "javascript:void(0)"
     end
   end
-  navigate_to "Store", store_path do |categories|
-    categories.navigate_to "On special", store_on_special_path
-    categories.navigate_to "Coming soon", store_coming_soon_path
+  navigate_to "Store", store_on_special_path do |store|
+    store.navigate_to "On special", store_on_special_path
+    store.navigate_to "Coming soon", store_coming_soon_path
+    store.navigate_to "Categories", store_categories_path do |categories|
+      categories.navigate_to "Shirts", store_categories_shirts_path
+      categories.navigate_to "Pants", store_categories_pants_path
+      categories.navigate_to "Hats", store_categories_hats_path
+      categories.navigate_to "Accessories", store_categories_accessories_path
+      categories.navigate_to "Sporks", store_categories_sporks_path
+    end
   end
   navigate_to "Something", something_else_path
   navigate_to "Contact us", contact_us_path
