@@ -1,30 +1,94 @@
-nav{
-  display:block;
+/* Nav */
+
+nav {
+	float: left;
+	display: block;
+	width: 100%;
+	position: relative;
 }
-ul.navigation.application{
-  padding: 0;
-  margin: 0;
+	nav ul, 
+	nav li {
+		float: left;
+		display: inline-block;
+	}
+
+
+/* @group Nav - Level 1 */
+
+nav ul.level_1 { 
+	width: 100%;
+	display: inline-block;
+	list-style: none;
+	height: 29px;
+	padding: 11px 0px 8px 0px;
+	background: #006D91; /* old browsers */
+	background: -moz-linear-gradient(top, #006D91 0%, #006086 99%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006D91), color-stop(99%,#006086)); /* webkit */
+	border-bottom: #000 1px solid;	
+}
+	nav ul.level_1 li { 
+		float: left;
+		display: inline-block;
+		margin-right: 10px;
+	}
+		nav ul.level_1 a {
+			display: inline-block;
+			padding: 6px 10px;
+		}
+			nav ul.level_1 li.active a,
+			nav ul.level_1 li.active a:hover {
+				padding: 5px 10px;
+				border-top: #074e69 1px solid;
+				border-bottom: #3d7589 1px solid;		
+				-moz-border-radius: 2px;
+				border-radius: 2px; 
+				background: #0f3545; /* old browsers */
+				background: -moz-linear-gradient(top, #0f3545 0%, #184d5f 99%); /* firefox */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0f3545), color-stop(99%,#184d5f)); /* webkit */		
+			} 
+
+			nav ul.level_1 li a:hover {
+				padding: 5px 10px;
+				background: #074e69; /* old browsers */
+				background: -moz-linear-gradient(top, #065471 0%, #0c5773 99%); /* firefox */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#065471), color-stop(99%,#0a5a78)); /* webkit */
+				border-top: #074e69 1px solid;
+				border-bottom: #186a88 1px solid;			
+				-moz-border-radius: 2px;
+				border-radius: 2px; 
+			} 	
+					
+/* @end */
+
+
+/* @group Nav - Level 1 */
+
+
+nav ul.level_2 {
+	width: 100%;
+	height: 45px;
+	position: absolute;
+	bottom: -30px;
+	left: 0px;	
+	background: #eee;
+	margin: 0px;
 }
 
-ul.navigation.application li{
+
+
+/* @end */
+
+
+/* @group Fonts */
+
+nav a { font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; font-size: 12px; color: #fff; }
+
+nav .level_1 a {
+	font-size: 12px; color: #fff; line-height: 16px; font-weight: bold;
+	text-decoration: none;
+    text-shadow: 0px 2px 3px #333;	
 }
 
-ul.navigation.application li a{
-  text-decoration: none;
-  color: #333;
-}
 
-ul.navigation.application li a:hover{
-  text-decoration: underline;
-}
 
-ul.navigation.application.level_1 a.active{
-  color: #FAA;
-}
-
-ul.navigation.application ul.level_2{
-  padding: 0;
-  margin: 0;
-  padding-left: 15px;
-}
-
+/* @end */
