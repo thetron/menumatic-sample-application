@@ -20,10 +20,10 @@
       <aside>
         <%#= navigation :application, :sidebar %>
         <h2>Secondary nav</h2>
-        <%= navigation :application, :levels => [:secondary] %>
+        <%= navigation :application, :level => :secondary %>
 
         <h2>Tertiary nav</h2>
-        <%= navigation :application, :levels => [:tertiary] %>
+        <%= navigation :application, :level => :tertiary %>
       </aside>
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>

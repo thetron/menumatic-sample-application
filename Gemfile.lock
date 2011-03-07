@@ -1,5 +1,5 @@
 PATH
-  remote: /Users/nicholasbruning/Involved/Involved/menumatic
+  remote: ../menumatic
   specs:
     menumatic (0.0.1)
 

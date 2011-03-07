@@ -7,7 +7,7 @@ class ApplicationNavigation < Menumatic::Navigation::Base
   navigate_to "Home", home_path, :active_paths => [:home_path, :root_path]
   navigate_to "About", about_path do |about|
     about.navigate_to "History", about_history_path
-    about.navigate_to "The team", about_the_team_path
+    about.navigate_to "The team", about_the_team_path 
     about.navigate_to "Our vision", about_our_vision_path
     group :sidebar do |sidebar|
       sidebar.navigate_to "Edit 'About'", "javascript:void(0)"
