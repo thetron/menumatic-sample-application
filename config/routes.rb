@@ -15,6 +15,9 @@ MenumaticTest::Application.routes.draw do
   match 'store/categories/hats' => 'home#index'
   match 'store/categories/accessories' => 'home#index'
   match 'store/categories/sporks' => 'home#index'
+
+  sitemap_for :application
+
   root :to => "home#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.

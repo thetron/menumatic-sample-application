@@ -21,9 +21,12 @@
         <%#= navigation :application, :sidebar %>
         <h2>Secondary nav</h2>
         <%= navigation :application, :level => :secondary %>
-
+        <hr />
         <h2>Tertiary nav</h2>
         <%= navigation :application, :level => :tertiary %>
+        <hr />
+        <h2>Sidebar</h2>
+        <%#= navigation_group :application, :sidebar, :show => :all %>
       </aside>
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>

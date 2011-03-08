@@ -23,11 +23,15 @@ class ApplicationNavigation < Menumatic::Navigation::Base
       categories.navigate_to "Accessories", store_categories_accessories_path
       categories.navigate_to "Sporks", store_categories_sporks_path
     end
+    group :sidebar do |sidebar|
+      sidebar.navigate_to "Edit specials", "javascript:void(0)"
+    end
   end
   navigate_to "Something", something_else_path
   navigate_to "Contact us", contact_us_path
 
   group :sidebar do |sidebar|
-    sidebar.navigate_to "Logout", "javascript:void(0)"#, :if => Proc.new{ logged_in? }
+    sidebar.navigate_to "Management console", "javascript:void(0)"
+    sidebar.navigate_to "Logout", "javascript:void(0)"
   end
 end
