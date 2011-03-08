@@ -1,4 +1,4 @@
-		ul.application.navigation, ul.application.navigation ul { 
+		ul.navigation.application, ul.navigation.application ul { 
 			font-family:Tahoma,Arial,sans-serif; font-size:12px; margin:0px; padding:0px;
 			width: 100%; 
 			background: #ccc; 
@@ -11,42 +11,47 @@
 			margin: 0;
 		}
 		
-			ul.application.navigation li { 
+			ul.navigation.application.level_1 > li > a{
+				padding: 8px 10px;
+			}
+		
+			ul.navigation.application li { 
 				margin:0; 
 				padding:0 10px; 
 				list-style:none; 
 				float:left; 
 				height: 30px; 
 			}
-			ul.application.navigation li:hover,
-			ul.application.navigation li.active { color:#FFF; text-decoration:none; }
-				ul.application.navigation li a { 
+			ul.navigation.application li:hover,
+			ul.navigation.application li.active { color:#FFF; text-decoration:none; }
+				ul.navigation.application li a { 
 					padding:0 10px; 
 					margin:0; 
 					color:#FFF; 
 					text-decoration: none; 
 					display: block; 
 				}
+
 			
 /* Level 1 */
-ul.application.navigation.level_1 { position: relative; top: 0; }
-ul.application.navigation.level_1 > li.active,
-ul.application.navigation.level_1 > li.active:hover { background:#444; }
-ul.application.navigation.level_1 > li:hover { background:#689cfe; }
+ul.navigation.application.level_1 { position: relative; top: 0; }
+ul.navigation.application.level_1 > li.active,
+ul.navigation.application.level_1 > li.active:hover { background:#444; }
+ul.navigation.application.level_1 > li:hover { background:#689cfe; }
 
 /* Levels 2+ */
-ul.application.navigation.level_1 { background: #3b7df6; }
-ul.application.navigation ul.level_2 { background: #444; }
-ul.application.navigation ul.level_3 { background: #666; }
-ul.application.navigation ul.level_4 { background: #828282; }
+ul.navigation.application.level_1 { background: #3b7df6; }
+ul.navigation.application ul.level_2 { background: #444; }
+ul.navigation.application ul.level_3 { background: #666; }
+ul.navigation.application ul.level_4 { background: #828282; }
 
-ul.application.navigation ul li a { 
+ul.navigation.application ul li a { 
 	height: 20px;
 	margin-top: 5px;
 	line-height: 20px;
 }
-ul.application.navigation ul li a:hover,
-ul.application.navigation ul li.active > a { 
+ul.navigation.application ul li a:hover,
+ul.navigation.application ul li.active > a { 
 	background:#b3b3b3; 
 	color:#FFF; 
 	text-decoration:none; 
@@ -55,14 +60,14 @@ ul.application.navigation ul li.active > a {
 	border-radius: 5px;
 }
 
-ul.application.navigation.depth_1  { height: 30px; }
-ul.application.navigation.depth_2  { height: 60px; }
-ul.application.navigation.depth_3  { height: 90px; }
-ul.application.navigation.depth_4  { height: 120px; }
-ul.application.navigation.depth_5  { height: 150px; }
-ul.application.navigation.depth_6  { height: 180px; }
-ul.application.navigation.depth_7  { height: 210px; }
-ul.application.navigation.depth_8  { height: 240px; }
-ul.application.navigation.depth_9  { height: 270px; }
-ul.application.navigation.depth_10 { height: 300px; }
+ul.navigation.application.depth_1  { height: 30px; }
+ul.navigation.application.depth_2  { height: 60px; }
+ul.navigation.application.depth_3  { height: 90px; }
+ul.navigation.application.depth_4  { height: 120px; }
+ul.navigation.application.depth_5  { height: 150px; }
+ul.navigation.application.depth_6  { height: 180px; }
+ul.navigation.application.depth_7  { height: 210px; }
+ul.navigation.application.depth_8  { height: 240px; }
+ul.navigation.application.depth_9  { height: 270px; }
+ul.navigation.application.depth_10 { height: 300px; }
 
