@@ -22,7 +22,23 @@ class ApplicationNavigation < Menumatic::Navigation::Base
       categories.navigate_to "Hats", store_categories_hats_path
       categories.navigate_to "Accessories", store_categories_accessories_path
       categories.navigate_to "Sporks", store_categories_sporks_path do |sporks|
-				sporks.navigate_to "Australian", store_categories_accessories_sporks_path
+				sporks.navigate_to "Russian", store_categories_sporks_russian_path
+        sporks.navigate_to "Italian", store_categories_sporks_italian_path
+        sporks.navigate_to "Australian", store_categories_sporks_australian_path do |australian|
+          australian.navigate_to "Small", store_categories_sporks_australian_small_path
+          australian.navigate_to "Medium", store_categories_sporks_australian_medium_path
+          australian.navigate_to "Large", store_categories_sporks_australian_large_path
+        end
+        sporks.navigate_to "English", store_categories_sporks_english_path do |english|
+          english.navigate_to "Small", store_categories_sporks_english_small_path
+          english.navigate_to "Medium", store_categories_sporks_english_medium_path
+          english.navigate_to "Large", store_categories_sporks_english_large_path
+        end
+        sporks.navigate_to "French", store_categories_sporks_french_path do |french|
+          french.navigate_to "Small", store_categories_sporks_french_small_path
+          french.navigate_to "Medium", store_categories_sporks_french_medium_path
+          french.navigate_to "Large", store_categories_sporks_french_large_path
+        end
 			end
     end
     group :sidebar do |sidebar|
