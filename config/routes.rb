@@ -15,6 +15,31 @@ MenumaticTest::Application.routes.draw do
   match 'store/categories/hats' => 'home#index'
   match 'store/categories/accessories' => 'home#index'
   match 'store/categories/sporks' => 'home#index'
+	match 'store/categories/sporks/russian' => 'home#index'
+	match 'store/categories/sporks/italian' => 'home#index'
+	match 'store/categories/sporks/german' => 'home#index'
+	
+	match 'store/categories/sporks/australian' => 'home#index'
+		match 'store/categories/sporks/australian/extra-small' => 'home#index'
+		match 'store/categories/sporks/australian/small' => 'home#index'
+		match 'store/categories/sporks/australian/medium' => 'home#index'
+		match 'store/categories/sporks/australian/large' => 'home#index'
+		match 'store/categories/sporks/australian/extra-large' => 'home#index'
+		
+	match 'store/categories/sporks/english' => 'home#index'
+		match 'store/categories/sporks/english/extra-small' => 'home#index'
+		match 'store/categories/sporks/english/small' => 'home#index'
+		match 'store/categories/sporks/english/medium' => 'home#index'
+		match 'store/categories/sporks/english/large' => 'home#index'
+		match 'store/categories/sporks/english/extra-large' => 'home#index'		
+		
+		match 'store/categories/sporks/french' => 'home#index'
+			match 'store/categories/sporks/french/extra-small' => 'home#index'
+			match 'store/categories/sporks/french/small' => 'home#index'
+			match 'store/categories/sporks/french/medium' => 'home#index'
+			match 'store/categories/sporks/french/large' => 'home#index'
+			match 'store/categories/sporks/french/extra-large' => 'home#index'	
+
 
   sitemap_for :application
 

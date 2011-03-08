@@ -21,7 +21,9 @@ class ApplicationNavigation < Menumatic::Navigation::Base
       categories.navigate_to "Pants", store_categories_pants_path
       categories.navigate_to "Hats", store_categories_hats_path
       categories.navigate_to "Accessories", store_categories_accessories_path
-      categories.navigate_to "Sporks", store_categories_sporks_path
+      categories.navigate_to "Sporks", store_categories_sporks_path do |sporks|
+				sporks.navigate_to "Australian", store_categories_accessories_sporks_path
+			end
     end
     group :sidebar do |sidebar|
       sidebar.navigate_to "Edit specials", "javascript:void(0)"
