@@ -1,30 +1,27 @@
-nav{
+ul.application.navigation{
+  padding: 0;
+  margin: 0;
   display:block;
-}
-ul.navigation.application{
-  padding: 0;
-  margin: 0;
+  clear:both:
+  float:left;
 }
 
-ul.navigation.application li{
+ul.application.navigation li{
+  display: inline;
+  background: #CCC;
+  float: left;
 }
 
-ul.navigation.application li a{
-  text-decoration: none;
-  color: #333;
+ul.application.navigation li a{
+  display: block;
+  padding: 15px 5px;
 }
 
-ul.navigation.application li a:hover{
-  text-decoration: underline;
+ul.application.navigation.level_1 li.active{
+  background: #777
 }
 
-ul.navigation.application.level_1 a.active{
-  color: #FAA;
-}
-
-ul.navigation.application ul.level_2{
-  padding: 0;
-  margin: 0;
-  padding-left: 15px;
+ul.application.navigation.level_2 li{
+  background: #777;
 }
 
