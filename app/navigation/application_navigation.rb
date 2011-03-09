@@ -4,7 +4,7 @@ class ApplicationNavigation < Menumatic::Navigation::Base
     include Rails.application.routes.url_helpers
   end
 
-  navigate_to "Home", home_path, :active_paths => [:home_path, :root_path]
+  navigate_to "Home", home_path, :active_on => [home_path, root_path]
   navigate_to "About", about_path do |about|
     about.navigate_to "History", about_history_path
     about.navigate_to "The team", about_the_team_path 

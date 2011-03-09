@@ -1,7 +1,7 @@
 PATH
   remote: ../menumatic
   specs:
-    menumatic (0.1.0)
+    menumatic (0.1.2)
 
 GEM
   remote: http://rubygems.org/
